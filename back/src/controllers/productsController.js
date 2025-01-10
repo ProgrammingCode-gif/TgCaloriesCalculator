@@ -2,7 +2,8 @@ const api = require("../services/api")
 
 class ProductController {
     async getProducts(req, res) {
-        const product = await api.getProductByName('apple')
+        const productName = req.query.name
+        const product = await api.getProductByName(productName)
         res.json(product)
     }
     async getProduct(req, res) {

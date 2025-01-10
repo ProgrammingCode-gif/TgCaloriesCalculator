@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api')
 
 const token = '7391357454:AAH7Dc0uhTeptvpfL0Uz3TqjUy7lu8bcHBA'
-const webAppUrl = 'https://18a8-95-46-69-236.ngrok-free.app'
+const webAppUrl = 'https://df77-95-46-68-40.ngrok-free.app'
 
 const bot = new TelegramBot(token, {polling: true})
 

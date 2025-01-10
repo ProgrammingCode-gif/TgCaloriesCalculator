@@ -1,7 +1,7 @@
-import { BrowserRouter as Router } from "react-router-dom"
-import Header from "./components/Header/Header"
+import { BrowserRouter as Router, useLocation } from "react-router-dom"
 import AppRouter from "./router"
 import Footer from "./components/Footer/Footer"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 
 function App() {
 
@@ -9,12 +9,10 @@ function App() {
     <>
       <Router>
         <div className="wrapper">
-        <Header></Header>
 
-        <AppRouter></AppRouter>
+          <AppRouter></AppRouter>
 
-        <Footer></Footer>
-
+          <Footer></Footer>
 
         </div>
       </Router>
